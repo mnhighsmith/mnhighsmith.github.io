@@ -1,216 +1,63 @@
-<!doctype html>
-<!-- Thank you to Yong Bakos - Oregon State Cascades -->
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
 
-    <title>Megan</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <!-- Your custom styles for this template -->
-    <link href="FIXME.css" rel="stylesheet">
   </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python RPS</title>
 
-  <body>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!--Start of Navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.google.com/document/d/1cAxrvVRHBW5a14opJSZNlSHsP4n2P0QrIRhWWf0waHM/edit">
-                Python Examples</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <!-- Drop down menu 1 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" 
-                    id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="http://www.w3schools.com" target="_blank_">W3 Schools</a>
-              <a class="dropdown-item" href="https://codehs.com/student/2206283/section/175437">HS Code</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
+<style>
+ h1 {
+     text-align: center; font-weight: bold; 
+     outline: #F92F2F solid 15px; 
+     margin: auto;  
+     padding: 20px;
+     } 
+ body{background-color: #FACBCB;
+ }
 
-            <!-- Drop down menu 2 -->
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" 
-                    id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="https://github.com/mntucker" target="_blank_">Github</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-            </li>
-        </ul>
-        <!-- Search Form -->
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Does nothing</button>
-        </form>
-      </div>
-    </nav> <!--End of Navigation Bar -->
+h2{font-size: 20pt; font-color: rgb(180, 42, 42);;
+}
 
-    <main role="main">
+</style>
+<body>
+          <!--Start of Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="../index.html"role="button">Go Home </a>
+                  </li>
+                </ul>
+              </div>
+            </nav><!--End of Navigation Bar -->
+              <hr>
+    <H1>Rock, Paper , Scissors Python </H1>
+    <hr>
+    <iframe 
+    height="800px" 
+    width="50%"
+    src="https://repl.it/@MeganTucker/InnocentDamagedBuckets?lite=true" 
+    scrolling="no" 
+    frameborder="no" 
+    allowtransparency="true" 
+    allowfullscreen="true" 
+    sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
+    </iframe>
 
-      <!-- Main heading -->
-      <div class="jumbotron" >
-        <div 
-        class="container" 
-        style="height: 130px;">
-          <h1 class="display-3" >Megan's Portfolio</h1>
-          <p style="font-size: 18pt;">This Portfolio is for my CS160/161/162/260 class work at COCC</p>
-          <p><a class="btn btn-primary btn-lg" href="My stuff/Index.html" style=background-color:mediumturquoise type="button">My Own Stuff &raquo;</a></p>
-        </div>
-      </div>
-
-      <div class="container">
-        <!-- First row of columns -->
-        <div class="row" style="background-color:mediumpurple;">
-
-          <div class="col-md-2">
-            <h2>Scratch Programs</h2>
-            <p><a class="btn btn-secondary" href="Scratch/index.html" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Other Programs</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Python Programs</h2>
-            <p><a class="btn btn-secondary" href="python/index.html" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Processing Programs</h2>
-            <p><a class="btn btn-secondary" href="p5.js/index.html" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Greenfoot Programs</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Book Q and A</h2>
-            <p><a class="btn btn-secondary" href="Bookqa/index.html" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-      </div> <!-- End of first row -->
-
-      <hr>
-
-      <div class="container">
-        <!-- Second Row of columns -->
-        <div class="row"style="background-color:mediumturquoise">
-
-          <div class="col-md-2">
-            <h2>Degree Pathways</h2>
-            <p><a class="btn btn-secondary" href="colleges/index.html" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Code Circuits</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>App Inventor</h2>
-            <p><a class="btn btn-secondary" href="app_inventor/index.html" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>CodeHS Snaps</h2>
-            <p><a class="btn btn-secondary" href="codehs/index.html" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Midterm Eval</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Short Reads</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-      </div> <!-- /container -->
-
-      <hr>
-        
-      <div class="container">
-        <!-- Third row of columns -->
-        <div class="row" style="background-color:mediumpurple;">
-
-          <div class="col-md-2">
-            <h2>Elements Ch 1</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Code Combat</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Tresure Hunt</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>The Final Exam</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>Extra Credit</h2>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          
-          <div class="col-md-2">
-            <h2>My College Choices</h2>
-            <p><a class="btn btn-secondary" href="colleges/index.html" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-      </div> <!-- /container -->
-
-      <hr>
-
-      <div class="container">
-        <p>FIXME: YOUR CONTENT GOES HERE</p>
-      </div>
-      
-    </main>
-
-    <footer class="container">
-      <p>&copy; COCC 2020-2021</p>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
+
